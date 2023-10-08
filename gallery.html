@@ -1,55 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gallery</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@200;300;400&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./gallery.css" />
+        <link rel="stylesheet" href="./style.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@200;300;400&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="gallery.css">
-</head>
+    <body>
+        <div class="nav-container">
+            <div class="logo-nav">
+                <a href="/">
+                    <img
+                        src="logo-social.png"
+                        alt=""
+                        height="80px"
+                        width="80px"
+                    />
+                </a>
+            </div>
 
-<body>
-    <div class="container">
-        <div class="header">
-            <h2>BIBASH PORTFOLIO</h2>
+            <div class="nav-items">
+                <div class="header">
+                    <div class="my-name">BIBASH PORTFOLIO</div>
+                    <div class="nav-close-container">
+                        <button id="nav-close-btn">&#10006;</button>
+                    </div>
+                </div>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="skills.html">Skills</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="internship.html">Internship</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="culture.html">Culture</a>
+                    <a href="education.html">Education</a>
+                    <a href="goals.html">Goals</a>
+                </nav>
+            </div>
+            <div class="nav-option">
+                <button id="nav-btn">&#9776;</button>
+            </div>
         </div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="skills.html">Skills</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="internship.html">Internship</a>
-            <a href="contact.html">Contact</a>
-            <a href="culture.html">Culture</a>
-            <a href="education.html">Education</a>
-            <a href="goals.html">Goals</a>
-        </nav>
-        <img src="logo-social.png" alt="" height="80px" width="80px" a>
-    </div>
-    <h1 class="heading">Gallery</h1>
-    <div class="row">
-        <div class="column">
-            <img src="images (1).jpeg" alt="" width="100%">
+        <h1 class="heading">Gallery</h1>
+        <div class="row">
+            <div class="column">
+                <img src="images (1).jpeg" alt="" width="100%" />
+            </div>
+            <div class="column">
+                <img src="images (2).jpeg" alt="" width="100%" />
+            </div>
+            <div class="column">
+                <img src="images (2).jpeg" alt="" width="100%" />
+            </div>
+            <div class="column">
+                <img src="images (2).jpeg" alt="" width="100%" />
+            </div>
+            <div class="column">
+                <img src="images (2).jpeg" alt="" width="100%" />
+            </div>
+            <div class="column">
+                <img src="images (2).jpeg" alt="" width="100%" />
+            </div>
         </div>
-        <div class="column">
-            <img src="images (2).jpeg" alt="" width="100%">
-        </div>
-        <div class="column">
-            <img src="images (2).jpeg" alt="" width="100%">
-        </div>
-        <div class="column">
-            <img src="images (2).jpeg" alt="" width="100%">
-        </div>
-        <div class="column">
-            <img src="images (2).jpeg" alt="" width="100%">
-        </div>
-        <div class="column">
-            <img src="images (2).jpeg" alt="" width="100%">
-        </div>
-    </div>
-</body>
-
+        <script type="text/javascript">
+            document.getElementById("nav-btn").addEventListener("click", () => {
+                document
+                    .querySelector(".nav-items")
+                    .classList.add("open-nav-list");
+            });
+            document
+                .getElementById("nav-close-btn")
+                .addEventListener("click", () => {
+                    document
+                        .querySelector(".nav-items")
+                        .classList.remove("open-nav-list");
+                });
+        </script>
+    </body>
 </html>
