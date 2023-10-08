@@ -1,33 +1,101 @@
-*{
-  box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
-  font-family: "Poppins", sans-serif;
+* {
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
-.container {
+
+.header {
     text-align: center;
+}
+.box {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 20px;
+}
+.header-skill-box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.skill-range {
+    width: 60%;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #50cae36d;
+}
+.skill-range-value {
     background-color: #50cbe3;
-    margin-top: 5px;
-    padding: 10px;
-  }
-  nav {
-    text-align: center;
-    background-color: #50cbe3;
-    display: inline;
-  }
-  a {
-    text-decoration: none;
-    margin: 20px;
-  }
-  img {
-    float: left;
-    margin: none;
-  }
-  image {
-    float: right;
-  }
-  .inner{
-    padding-top: px;
-  }
-  .header{
-    text-align: center;
-  }
+    height: 20px;
+    border-radius: 10px;
+    text-align: end;
+    padding-right: 20px;
+    color: white;
+    font-size: 14px;
+}
+.html-value {
+    width: 70%;
+}
+.css-value {
+    width: 50%;
+}
+.js-value {
+    width: 40%;
+}
+.csharp-value {
+    width: 20%;
+}
+.python-value {
+    width: 40%;
+}
+.img-skill {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.img-skill > img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.section-skills {
+    margin: 40px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+    padding: 0 2rem;
+}
+.title-skill {
+    font-size: 20px;
+    width: 100px;
+}
+.header-skill-box ~ p {
+    text-align: justify;
+}
+
+@media all and (max-width: 768px) {
+    .section-skills {
+        display: block;
+    }
+    .header-skill-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .img-skill {
+        width: 50px;
+        height: 50px;
+    }
+    .img-skill > img {
+        width: 50px;
+        height: 50px;
+    }
+    .section-skills {
+        padding: 0 1rem;
+    }
+    .skill-range {
+        width: 100%;
+    }
+}
+@media all and (max-width: 768px) {
+}

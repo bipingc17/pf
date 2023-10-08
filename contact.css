@@ -4,32 +4,54 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  .container {
-    text-align: center;
-    background-color: #50cbe3;
-    margin-top: 5px;
-    padding: 10px;
-  }
-  nav {
-    text-align: center;
-    background-color: #50cbe3;
-    display: inline;
-  }
-  a {
-    text-decoration: none;
-    margin: 20px;
-  }
-  img {
-    float: left;
-    margin: none;
-  }
-  .contact{
-    position: relative;
+}
+.contact {
     min-height: 100vh;
-    padding: 50px 100px;
+    padding: 2rem 1rem 1rem 1rem;
+}
+.contact .icon {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.contact-title {
+    font-size: 20px;
+    font-weight: 500;
+}
+.icon a {
+    margin: 0 !important;
+    color: black;
+}
+.icon-here {
+    margin-top: 1rem;
+}
+.contact-content-container {
+    display: flex;
+    margin-top: 2rem;
+}
+.contactInfo,
+.contact-form {
+    flex: 1;
+}
+.inputBox input,
+.inputBox textarea {
+    outline: none;
+    padding: 0.5rem;
+}
+.contact-form-title {
+    margin-bottom: 0.5rem;
+    font-size: 25px;
+}
+.inputBox {
+    margin-bottom: 0.6rem;
+    display: flex;
     flex-direction: column;
-  }
+}
+.submit {
+    padding: 0.6rem 0;
+}
+@media all and (max-width: 768px) {
+    .contact-content-container {
+        flex-direction: column;
+    }
+}
