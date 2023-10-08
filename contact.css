@@ -1,0 +1,35 @@
+* {
+    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .container {
+    text-align: center;
+    background-color: #50cbe3;
+    margin-top: 5px;
+    padding: 10px;
+  }
+  nav {
+    text-align: center;
+    background-color: #50cbe3;
+    display: inline;
+  }
+  a {
+    text-decoration: none;
+    margin: 20px;
+  }
+  img {
+    float: left;
+    margin: none;
+  }
+  .contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }

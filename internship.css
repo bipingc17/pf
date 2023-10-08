@@ -1,0 +1,45 @@
+* {
+    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+  }
+.container {
+    text-align: center;
+    background-color: #50cbe3;
+    margin-top: 5px;
+    padding: 10px;
+  }
+nav {
+    text-align: center;
+    background-color: #50cbe3;
+    display: inline;
+  }
+  a {
+    text-decoration: none;
+    margin: 20px;
+  }
+  img {
+    float: left;
+    margin: none;
+  }
+  image {
+    float: left;
+  }
+  .heading{
+    text-align: center;
+  }
+  body{
+    margin: 0;
+
+  }
+.section{
+    background-color: black;
+}
+  .section img{
+    height: 250px;
+  }
+  
+  .section h1{
+    color: #50cbe3;
+  }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
